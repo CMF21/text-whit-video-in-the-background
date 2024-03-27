@@ -1,43 +1,62 @@
+/* importa la fuente "Madimi One" desde Google Fonts y la hace disponible para su uso */
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
 .madimi-one-regular {
+    /* clase para el font */
     font-family: "Madimi One", sans-serif;
+    /* Establece la fuente de texto */
     font-weight: 400;
+    /* Especifica el grosor de la fuente */
     font-style: normal;
+    /* Establece el estilo de la fuente como normal (no itálica) */
 }
 
-*{
+* {
+    /* aplica estilos a todos los elementos en la página */
     box-sizing: border-box;
+    /* Hace que el modelo de caja incluya el borde y el relleno en el ancho y alto total de un elemento, en lugar de agregarlos por separado. */
     margin: 0;
+    /* Elimina el margen exterior */
     padding: 0;
+    /* Elimina el relleno interior */
 }
-/* quita el scroll */
+
 body {
+    /* Oculta cualquier contenido que se desborde del área visible del body, evitando el desplazamiento vertical y horizontal (scroll). */
     overflow: hidden;
 }
+
 .container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: relative; /* Posición del elemento en relación con su posición normal. */
+    width: 100%; /* 100% del ancho del contenedor principal. */
+    height: 100%; /* 100% de la altura del contenedor principal. */
 }
 
 .advertising video {
-    width: 100%;
-    height: 100vh
+    width: 100%; 
+    height: 100vh; /* Altura del video al 100% de la altura de la ventana del navegador (viewport). */
 }
 
 .text-box {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;/* Posición del elemento de manera absoluta, en relación con su contenedor más cercano con posición relativa. */
+    display: flex; /* Utiliza el modelo de caja flexible para el diseño del contenido. */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del contenedor. */
+    align-items: center; /* Centra verticalmente el contenido dentro del contenedor. */
+
+    /* Coloca el elemento en la esquina superior izquierda de su contenedor. */
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100vh;
     background-color: black;
     color: white;
+    
+    /* Establece el tamaño de fuente y transforma el texto a mayúsculas. */
     font-size: 23rem;
     text-transform: uppercase;
-    /* nuevo */
-    mix-blend-mode: multiply;
+
+    /* Aplica un efecto de mezcla multiplicativa al elemento, combinando el color de fondo con el contenido del elemento. */
+    mix-blend-mode:multiply;
+    /* los colores oscuros del contenido se vuelven aún más oscuros, mientras que los colores claros se vuelven más transparentes o se desvanecen en el fondo */
 }
